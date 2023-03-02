@@ -2,8 +2,8 @@ import React,{useEffect,useState} from 'react'
 import "./WeatherApp.css"
 
 const WeatherApp = () => {
-  const [city,setCity]=useState(null)
-  const [search,setSearch]=useState("pune")
+  const [city,setCity]=useState([])
+  const [search,setSearch]=useState("Hyderabad")
 
   useEffect(()=>{
 const fetchApi=async ()=>{
@@ -19,7 +19,7 @@ fetchApi()
   },[search])
   return (
     <div >
-    <h1 className='weather'><i className="fa-solid fa-sun-cloud">⛅</i>Weather App </h1>
+    <h1 className='weather'><i className="fa-solid fa-sun-cloud " >⛅ </i>Weather App </h1>
 <div className='box'>
 <div className='inputData'
 >

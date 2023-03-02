@@ -5,7 +5,7 @@
     font-family: 'Poppins', sans-serif;
   }
 .err{
-  margin:20px 0 0 85px;
+  margin:45px 0 0 75px;
   
 }
   body {
@@ -40,15 +40,13 @@
     padding: 7px;
     border-radius: 10px;
     border: none;
-    margin-left: 45px;
+    margin-left: 50px;
   }
   .tempmin_max{
 margin:15px 0 0 50px;
   }
 
   .box {
-    width: 20vw;
-    height:50vh;
     border-radius: 5px;
     box-shadow: 0 2px 30px rgba(black, 0.2);
     background: #a0b5ef82;
@@ -88,16 +86,7 @@ margin:15px 0 0 50px;
     z-index: 3 !important;
   }
   
-  .box:after {
-    content: "";
-    display: block;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 11;
-    transform: translate3d(0, 0, 0);
-  }
+
   
   @keyframes drift {
     from {
@@ -129,13 +118,7 @@ margin:15px 0 0 50px;
     text-align: center;
   }
   
-  .weathercon {
-    height: 55%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 3em;
-  }
+  
   
   @media (max-width: 600px) {
     .box {
@@ -167,17 +150,5 @@ margin:15px 0 0 50px;
     }
     
   }
-  
-  @media (max-height: 500px) {
-    .box {
-      height: 80vh;
-    }
-  
-    .wave {
-      top: 115%;
-    }
-   
-    
-  }
-  
+
 
